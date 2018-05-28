@@ -6,8 +6,8 @@
 class FunctionalClock
 {
 public:
-	FunctionalClock();
-	~FunctionalClock();
+	FunctionalClock() {}
+	~FunctionalClock() {}
 
 	static double high_res_timer(std::function<void()> lambda)
 	{
@@ -18,7 +18,6 @@ public:
 
 		std::chrono::duration<double> time = end - start;
 			
-	
 		return time.count();
 	}
 
