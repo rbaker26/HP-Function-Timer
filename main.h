@@ -12,6 +12,6 @@ void fillVector(std::vector<int>& v, const unsigned int& SIZE)
 
 		for (unsigned int i = 0; i < SIZE; ++i)
 		{
-            v.push_back(distribution(generator));
+                    v.push_back(distribution(generator));
 		}
 }
