@@ -14,4 +14,4 @@ void fillVector(std::vector<int>& v, const unsigned int& SIZE)
 		{
                     v.push_back(distribution(generator));
 		}
-}
+} 
