@@ -22,7 +22,7 @@ int main()
     double time2 = FunctionalClock::high_res_timer([](){std::cout << "Hello World\n";});
     // Output the Result
     std::cout << "std::cout - Time:\t" << time2 <<std::endl;
-
+ 
 
     std::cin.get();
     return 0;
