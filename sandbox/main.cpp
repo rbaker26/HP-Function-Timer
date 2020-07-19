@@ -13,56 +13,56 @@ void printTest(std::string test_name, double time);
 
 int main()
 {
-    //for (long i = 100; i <= 1000000000; i *= 10)
-    //{
-    //    // Make Vector of Random Ints
-    //    std::vector<int> rVector;
-    //    rVector.reserve(i);
-    //    fillVector(rVector, i);
+    for (long i = 100; i <= 1000000000; i *= 10)
+    {
+        // Make Vector of Random Ints
+        std::vector<int> rVector;
+        rVector.reserve(i);
+        fillVector(rVector, i);
 
-    //    // Store the sort in a lambda to pass to the timing function
-    //    std::function<void()> func = [&]()mutable {std::sort(std::execution::seq, rVector.begin(), rVector.end()); };
-    //    // Send sorting F(x) to timing class and return the time as a double
-    //    double time_sort = hpft::timer(func);
-    //    // Output the Result
-    //    std::ostringstream oss;
-    //    oss << i;
-    //    printTest("std::sort(seq) - n=" + oss.str(), time_sort);
-    //}
+        // Store the sort in a lambda to pass to the timing function
+        std::function<void()> func = [&]()mutable {std::sort(std::execution::seq, rVector.begin(), rVector.end()); };
+        // Send sorting F(x) to timing class and return the time as a double
+        double time_sort = hpft::timer(func);
+        // Output the Result
+        std::ostringstream oss;
+        oss << i;
+        printTest("std::sort(seq) - n=" + oss.str(), time_sort);
+    }
 
-    //for (long i = 100; i <= 1000000000; i *= 10)
-    //{
-    //    // Make Vector of Random Ints
-    //    std::vector<int> rVector;
-    //    rVector.reserve(i);
-    //    fillVector(rVector, i);
+    for (long i = 100; i <= 1000000000; i *= 10)
+    {
+        // Make Vector of Random Ints
+        std::vector<int> rVector;
+        rVector.reserve(i);
+        fillVector(rVector, i);
 
-    //    // Store the sort in a lambda to pass to the timing function
-    //    std::function<void()> func = [&]()mutable {std::sort(std::execution::par, rVector.begin(), rVector.end()); };
-    //    // Send sorting F(x) to timing class and return the time as a double
-    //    double time_sort = hpft::timer(func);
-    //    // Output the Result
-    //    std::ostringstream oss;
-    //    oss << i;
-    //    printTest("std::sort(par) - n=" + oss.str(), time_sort);
-    //}
+        // Store the sort in a lambda to pass to the timing function
+        std::function<void()> func = [&]()mutable {std::sort(std::execution::par, rVector.begin(), rVector.end()); };
+        // Send sorting F(x) to timing class and return the time as a double
+        double time_sort = hpft::timer(func);
+        // Output the Result
+        std::ostringstream oss;
+        oss << i;
+        printTest("std::sort(par) - n=" + oss.str(), time_sort);
+    }
 
-    //for (long i = 100; i <= 1000000000; i *= 10)
-    //{
-    //    // Make Vector of Random Ints
-    //    std::vector<int> rVector;
-    //    rVector.reserve(i);
-    //    fillVector(rVector, i);
+    for (long i = 100; i <= 1000000000; i *= 10)
+    {
+        // Make Vector of Random Ints
+        std::vector<int> rVector;
+        rVector.reserve(i);
+        fillVector(rVector, i);
 
-    //    // Store the sort in a lambda to pass to the timing function
-    //    std::function<void()> func = [&]()mutable {std::sort(std::execution::par_unseq, rVector.begin(), rVector.end()); };
-    //    // Send sorting F(x) to timing class and return the time as a double
-    //    double time_sort = hpft::timer(func);
-    //    // Output the Result
-    //    std::ostringstream oss;
-    //    oss << i;
-    //    printTest("std::sort(par_unseq) - n=" + oss.str(), time_sort);
-    //}
+        // Store the sort in a lambda to pass to the timing function
+        std::function<void()> func = [&]()mutable {std::sort(std::execution::par_unseq, rVector.begin(), rVector.end()); };
+        // Send sorting F(x) to timing class and return the time as a double
+        double time_sort = hpft::timer(func);
+        // Output the Result
+        std::ostringstream oss;
+        oss << i;
+        printTest("std::sort(par_unseq) - n=" + oss.str(), time_sort);
+    }
 
     
 
