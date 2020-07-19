@@ -32,4 +32,8 @@ std::sort(par_unseq) - n=1000000:       Time: 0.0232365
 std::sort(par_unseq) - n=10000000:      Time: 0.245376
 std::sort(par_unseq) - n=100000000:     Time: 2.46928
 std::sort(par_unseq) - n=1000000000:    Time: 28.0575
+
+
+std::cout:          Time: 0.000233
+std::cout - endl:   Time: 0.0004664
 ```
